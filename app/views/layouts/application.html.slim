@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title RedDotRubyConf 2015
+    meta name="description" content= 'RedDotRubyConf is the largest Ruby conference in South East Asia - a two day single-track event that brings together renowned international and local speakers.'
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+    script src='//use.typekit.net/huh0rxf.js'
+    script
+      ' try{Typekit.load();}catch(e){}
+
+    = csrf_meta_tags
+
+  body
+    header
+      .jumbotron.text-center
+        .container
+
+          = image_tag 'logo.png'
+
+          .row
+            .col-sm-4.col-sm-offset-4
+              .jumbotron--details
+                ' June 4 and 5, 2015
+                br
+                ' Singapore
+
+    .tagline
+      .container.text-center
+        small
+          ' RedDotRubyConf is the largest Ruby conference in South East Asia - a two day single-track event that brings together renowned international and local speakers.
+
+    .content
+      .container
+        = yield
