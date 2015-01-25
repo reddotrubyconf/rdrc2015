@@ -13,6 +13,11 @@ gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -28,5 +33,3 @@ group :development do
   gem 'guard-livereload', require: false
   gem 'rack-livereload'
 end
-
-
