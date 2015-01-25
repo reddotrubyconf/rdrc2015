@@ -29,7 +29,7 @@ class Speaker
       {
         :name     => 'Jesse Toth',
         :avatar   => 'speakers/jesse_toth.png',
-        :tagline  => 'Enginee at GitHub',
+        :tagline  => 'Engineer at GitHub',
         :twitter  => 'https://twitter.com/jesseplusplus',
         :github   => 'https://github.com/jesseplusplus',
       },
