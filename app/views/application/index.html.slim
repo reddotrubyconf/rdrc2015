@@ -1,1 +1,76 @@
-' Hi
+.row.section.speakers
+  .col-sm-8.col-sm-offset-2
+    - @speakers.each do |speaker|
+      .speaker
+        .outer-ring
+          .inner-ring
+            .speaker--avatar
+              = image_tag speaker.avatar
+        .speaker--name
+          = speaker.name
+        .speaker--tagline
+          = speaker.tagline
+        .speaker--links
+          - if speaker.twitter.present?
+            => link_to icon('twitter'), speaker.twitter
+          - if speaker.github.present?
+            => link_to icon('github'), speaker.github
+
+hr
+
+.row.section.call-for-proposals
+  .col-sm-12
+    .text-center
+      ' Our Call for Proposals will be open soon. Stay tune!
+
+hr
+
+.row.section.sponsors
+  .col-sm-12
+    .text-center
+      ' We are looking for sponsors. Please take a look at our Sponsor Kit and get in touch. Thank you!
+
+hr
+
+.row.section.venue
+  .col-sm-6.col-sm-offset-3
+    .row
+      .col-sm-6
+        .venue--name
+          ' Matrix (Biopolis), Singapore
+        .venue--address
+          ' 30 Biopolis Street, Singapore 138671
+
+        ul.venue--directions
+          li.venue--direction
+            span.cc CC22
+            span.ew> EW21
+            ' Bouna Vista is the nearest station to the venue
+          li.venue--direction Take Exit D at Bouna Vista and walk 500m to Matrix (Biopolis)
+          li.venue--direction Otherwise, use #{link_to 'Gothere.sg', 'http://gothere.sg/maps#q:matrix%20biopolis', target: '_blank'} to help plan your route
+
+      .col-sm-6
+        = link_to 'http://bit.ly/Wb5bfe', class: 'venue--map', target: '_blank'
+          = image_tag 'map.png'
+
+hr
+
+.row
+  .col-sm-6.col-sm-offset-3
+    .section
+      p.text-center
+        strong Code of Conduct
+
+      p
+        ' RedDotRubyConf (RDRC) aims to spread the adoption, knowledge, love and joy of the Ruby language and platform in the South East Asia developer community through talks, collaborations and networking.
+
+      p
+        ' We value every speaker and participant regardless of race, gender, nationality, religion, disability, appearance or sexual orientation.
+
+      p
+        ' We ask everyone attending the conference to respect each other to provide an inclusive and welcoming environment where everyone can learn and enjoy.
+        br
+        ' If you are being harassed or see someone else being harassed, please contact one of the conference organisers immediately.
+
+      p
+        ' Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.

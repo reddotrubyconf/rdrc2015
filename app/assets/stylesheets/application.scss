@@ -1,39 +1,11 @@
+$body-font: "proxima-nova", sans-serif;
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-$head-font: "grafolita-script", sans-serif;
-$body-font: "proxima-nova", sans-serif;
-
-body {
-  font-family: $body-font;
-  font-weight: 400;
-}
-
-.jumbotron {
-  margin : 0;
-  padding: 20px 0;
-  background: none;
-
-  &--details {
-    padding: 30px;
-    border-top: 1px solid #eee;
-
-    font-size: 2em;
-    font-weight: 100;
-    line-height: 1.2em;
-  }
-}
-
-.tagline {
-  padding: 5px;
-
-  background: #C51162;
-  color: white;
-}
-
-.content {
-  background: #F8BBD0;
-}
+@import 'base';
+@import 'speakers';
+@import 'venue';

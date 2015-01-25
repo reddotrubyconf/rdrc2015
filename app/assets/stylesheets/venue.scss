@@ -1,0 +1,47 @@
+.venue {
+
+  &--name {
+    font-size: 1.35em;
+  }
+
+  &--address {
+    color: #6b6953;
+  }
+
+  &--directions {
+    margin: 1.5em 0;
+    padding: 0;
+  }
+
+  &--direction {
+    margin: 10px 20px;
+    line-height: 1.4em;
+  }
+
+  &--map {
+    display: block;
+    border: 10px solid #ffffff;
+
+    img {
+      width: 100%;
+
+    }
+  }
+
+  span.ew,
+  span.cc {
+    display: inline-block;
+    padding: 0 5px;
+    font-weight: 200;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  span.ew {
+    background: #189e4a;
+  }
+
+  span.cc {
+    background: #f2ad27;
+  }
+}

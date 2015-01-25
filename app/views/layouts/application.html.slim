@@ -27,6 +27,9 @@ html
                 br
                 ' Singapore
 
+              p
+                = link_to 'Buy Tickets Soon', '#', class: 'btn btn-default btn-lg'
+
     .tagline
       .container.text-center
         small
@@ -35,3 +38,28 @@ html
     .content
       .container
         = yield
+
+    footer
+      .container
+        .row
+          .col-sm-6
+            div
+              ' Brought to you by: #{link_to '@winstonyw', 'https://www.twitter.com/winstonyw'}, #{link_to '@elishatan', 'https://twitter.com/elishatan'}
+
+            div
+              => link_to '@reddotrubyconf' , 'https://www.twitter.com/reddotrubyconf'
+              ' /
+              => link_to 'Facebook'        , '#'
+              ' /
+              => link_to 'Lanyrd'          , '#'
+              ' /
+              => link_to 'Flickr'          , 'https://www.flickr.com/photos/reddotrubyconf'
+
+          .col-sm-6.text-right
+            div
+              ' Previous Editions
+
+            div
+              => link_to 'RDRC 2013', 'http://rdrc2013.herokuapp.com/'
+              ' /
+              => link_to 'RDRC 2014', 'http://rdrc2014.herokuapp.com/'

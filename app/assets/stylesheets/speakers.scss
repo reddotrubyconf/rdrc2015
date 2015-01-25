@@ -1,0 +1,39 @@
+.speaker {
+  @extend .col-sm-4;
+  margin-top: 30px;
+  text-align: center;
+
+  .outer-ring {
+    margin: 0 25px;
+    border: 3px solid #FF80AB;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  .inner-ring {
+    border: 5px solid #C51162;
+    border-radius: 100%;
+  }
+
+  &--avatar img {
+    width: 100%;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 100%;
+  }
+
+  &--name {
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+  }
+
+  &--tagline {
+    font-size: 0.85em;
+  }
+
+  &--links {
+    font-size: 1.5em;
+  }
+}
