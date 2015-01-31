@@ -13,6 +13,13 @@ class Speaker
         :github   => 'https://github.com/matz',
       },
       {
+        :name     => 'Aaron Patterson',
+        :avatar   => 'speakers/tenderlove.png',
+        :tagline  => 'Ruby Core, Rails Core',
+        :twitter  => 'https://twitter.com/tenderlove',
+        :github   => 'https://github.com/tenderlove',
+      },
+      {
         :name     => 'Laurent Sansonetti',
         :avatar   => 'speakers/laurent_sansonetti.png',
         :tagline  => 'Creator of RubyMotion, HipByte',
@@ -40,13 +47,13 @@ class Speaker
         :twitter  => 'https://twitter.com/samsaffron',
         :github   => 'https://github.com/samsaffron',
       },
-      {
-        :name     => 'And more!',
-        :avatar   => 'speakers/ruby.png',
-        :tagline  => '',
-        :twitter  => '',
-        :github   => '',
-      },
+      # {
+      #   :name     => 'And more!',
+      #   :avatar   => 'speakers/ruby.png',
+      #   :tagline  => '',
+      #   :twitter  => '',
+      #   :github   => '',
+      # },
     ]
   end
 end

@@ -1,5 +1,7 @@
 .row.section.speakers
   .col-sm-8.col-sm-offset-2
+    .heading
+      ' Speakers
     - @speakers.each do |speaker|
       .speaker
         .outer-ring
@@ -14,26 +16,40 @@
           - if speaker.twitter.present?
             => link_to icon('twitter'), speaker.twitter
           - if speaker.github.present?
-            => link_to icon('github'), speaker.github
+            => link_to icon('github'), speaker.github 
+    
+    .text-center
+      ' And more to come!
 
 hr
 
 .row.section.call-for-proposals
-  .col-sm-12
+  .col-sm-6.col-sm-offset-3
+    .heading
+      ' Speak at RDRC 2015
     .text-center
-      ' Our Call for Proposals will be open soon. Stay tune!
+      ' We are looking for talks of all levels - beginner to advanced, and awesome non-technical talks that you think would appeal to engineers are also acceptable. You can choose to do a 25 minute talk or a 5 minute lightning talk.
+      p
+      ' Proposals will be accepted until <b>Monday, 30 Mar 2015, 2359hrs (SGT).</b>
+      p
+      br
+        = link_to 'Submit your talk now', 'https://bit.ly/rdrc15-cfp', target: '_blank', class: 'btn btn-success btn-large '
 
 hr
 
 .row.section.sponsors
   .col-sm-12
+    .heading
+      ' Sponsors
     .text-center
-      ' We are looking for sponsors. Please take a look at our Sponsor Kit and get in touch. Thank you!
+      ' We are looking for sponsors. Please get in touch with us at organisers@reddotrubyconf.com. Thank you!
 
 hr
 
 .row.section.venue
   .col-sm-6.col-sm-offset-3
+    .heading
+      ' Venue
     .row
       .col-sm-6
         .venue--name
@@ -57,10 +73,9 @@ hr
 
 .row
   .col-sm-6.col-sm-offset-3
+    .heading
+        ' Code of Conduct
     .section
-      p.text-center
-        strong Code of Conduct
-
       p
         ' RedDotRubyConf (RDRC) aims to spread the adoption, knowledge, love and joy of the Ruby language and platform in the South East Asia developer community through talks, collaborations and networking.
 
