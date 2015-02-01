@@ -26,14 +26,19 @@ html
           = image_tag 'logo.png', class: 'logo'
 
           .row
-            .col-sm-4.col-sm-offset-4
+            .col-sm-8.col-sm-offset-2
               .jumbotron--details
-                ' June 4 and 5, 2015
-                br
-                ' Singapore
-
+                ' Largest Ruby Conference in South East Asia
+                p
+                  ' Renowned Speakers &#149; Two Days &#149; Single Track 
+                  br
+                  ' June 4 and 5, 2015
+                  br
+                  ' Singapore
+          .row
+            .col-sm-4.col-sm-offset-4
               p
-                = link_to 'Buy Tickets Soon', '#', class: 'btn btn-default btn-lg'
+                = link_to 'Get Your Tickets', 'https://rdrc2015.eventbrite.sg/', target: '_blank', class: 'btn btn-danger btn-block main_cta'
 
     .tagline
       .container.text-center
@@ -43,6 +48,13 @@ html
     .content
       .container
         = yield
+      hr
+      .heading
+        ' See you in June!
+      .row
+        .col-sm-4.col-sm-offset-4
+          p
+            = link_to 'Get Your Tickets', 'https://rdrc2015.eventbrite.sg/', target: '_blank', class: 'btn btn-danger btn-block main_cta'
 
     footer
       .container
