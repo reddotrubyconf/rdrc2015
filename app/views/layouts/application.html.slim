@@ -30,7 +30,7 @@ html
               .jumbotron--details
                 ' Largest Ruby Conference in South East Asia
                 p
-                  ' Renowned Speakers &#149; Two Days &#149; Single Track 
+                  ' Renowned Speakers &#149; Two Days &#149; Single Track
                   br
                   ' June 4 and 5, 2015
                   br
@@ -39,6 +39,7 @@ html
             .col-sm-4.col-sm-offset-4
               p
                 = link_to 'Get Your Tickets', 'https://rdrc2015.eventbrite.sg/', target: '_blank', class: 'btn btn-danger btn-block main_cta'
+              br
 
     .tagline
       .container.text-center
@@ -48,13 +49,15 @@ html
     .content
       .container
         = yield
-      hr
-      .heading
-        ' See you in June!
-      .row
-        .col-sm-4.col-sm-offset-4
-          p
-            = link_to 'Get Your Tickets', 'https://rdrc2015.eventbrite.sg/', target: '_blank', class: 'btn btn-danger btn-block main_cta'
+
+        hr
+
+        .heading
+          ' See you in June!
+        .row
+          .col-sm-4.col-sm-offset-4
+            p
+              = link_to 'Get Your Tickets', 'https://rdrc2015.eventbrite.sg/', target: '_blank', class: 'btn btn-danger btn-block main_cta'
 
     footer
       .container

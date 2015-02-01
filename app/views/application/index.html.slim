@@ -16,9 +16,11 @@
           - if speaker.twitter.present?
             => link_to icon('twitter'), speaker.twitter
           - if speaker.github.present?
-            => link_to icon('github'), speaker.github 
-    
-    .text-center
+            => link_to icon('github'), speaker.github
+
+.row
+  .col-sm-12
+    .text-center style='margin-top: 20px;'
       ' And more to come!
 
 hr
@@ -28,12 +30,13 @@ hr
     .heading
       ' Speak at RDRC 2015
     .text-center
-      ' We are looking for talks of all levels - beginner to advanced, and awesome non-technical talks that you think would appeal to engineers are also acceptable. You can choose to do a 25 minute talk or a 5 minute lightning talk.
       p
-      ' Proposals will be accepted until <b>Monday, 30 Mar 2015, 2359hrs (SGT).</b>
+        ' We are looking for talks of all levels - beginner, intermediate or advanced, and awesome non-technical talks that you think would appeal to engineers are also welcomed! You can choose to do a 25 minute talk or a 5 minute lightning talk.
       p
-      br
-        = link_to 'Submit your talk now', 'https://bit.ly/rdrc15-cfp', target: '_blank', class: 'btn btn-success btn-large '
+        ' Proposals will be accepted until <b>Monday, 30 Mar 2015, 2359hrs (SGT)</b>.
+      p
+        br
+        = link_to 'Submit Your Talk Now', 'https://bit.ly/rdrc15-cfp', target: '_blank', class: 'btn btn-success btn-lg '
 
 hr
 
@@ -42,7 +45,7 @@ hr
     .heading
       ' Sponsors
     .text-center
-      ' We are looking for sponsors. Please get in touch with us at organisers@reddotrubyconf.com. Thank you!
+      ' We are looking for sponsors. Please #{link_to 'get in touch with us at organisers@reddotrubyconf.com', 'mailto:organisers@reddotrubyconf.com'}. Thank you!
 
 hr
 
