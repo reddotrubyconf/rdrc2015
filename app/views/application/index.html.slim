@@ -49,6 +49,29 @@ hr
 
       p Please #{link_to 'get in touch with us at organisers@reddotrubyconf.com', 'mailto:organisers@reddotrubyconf.com'} or #{link_to 'download our Sponsor Kit', '/sponsorkit.pdf'} for more information. Thank you!
 
+    .row.sponsors--associate
+      .col-sm-12.text-center
+        .subheading
+          ' Associate Sponsors
+      .col-sm-10.col-sm-offset-1
+        .col-sm-4
+          .sponsors--box
+            = link_to 'http://www.opsmanager.com/', target: '_blank' do
+              = image_tag 'sponsors/opsmanager.png'
+        .col-sm-4
+          .sponsors--box
+            = link_to 'http://www.tinkerbox.com.sg/', target: '_blank' do
+              = image_tag 'sponsors/tinkerbox.png'
+
+    .row.sponsors--speakers-dinner
+      .col-sm-12.text-center
+        .subheading
+          ' Speakers Dinner Sponsor
+      .col-sm-10.col-sm-offset-1
+        .col-sm-6.col-sm-offset-3.sponsors--box
+          = link_to 'http://piktochart.com/', target: '_blank' do
+            = image_tag 'sponsors/piktochart.png'
+
 hr
 
 .row.section.venue
@@ -76,10 +99,10 @@ hr
 
 hr
 
-.row
+.row.section.code-of-conduct
   .col-sm-6.col-sm-offset-3
     .heading#code-of-conduct
-        ' Code of Conduct
+      ' Code of Conduct
     .section
       p
         ' RedDotRubyConf (RDRC) aims to spread the adoption, knowledge, love and joy of the Ruby language and platform in the South East Asia developer community through talks, collaborations and networking.
@@ -100,7 +123,7 @@ hr
 .row
   .col-sm-6.col-sm-offset-3
     .heading#one-more-thing
-        ' One More Thing
+      ' One More Thing
     .section
       .text-center
         p
