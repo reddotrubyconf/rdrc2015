@@ -17,6 +17,12 @@
     text-align: center;
   }
 
+  &--elite {
+    .sponsors--box {
+      height: 160px;
+    }
+  }
+
   &--associate {
     .sponsors--box {
       height: 120px;
