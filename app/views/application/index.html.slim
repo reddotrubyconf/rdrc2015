@@ -1,3 +1,45 @@
+.row.section.schedule
+  .col-sm-12
+    .heading#schedule
+      ' Schedule
+  .col-sm-5.col-sm-offset-1
+    .subheading.text-left
+      ' Day 1, 4 June (Thursday)
+    = render 'slot_break'   , time: '8:15 AM'   , break_icon: 'check', break_desc: 'Registration + Breakfast'
+    = render 'slot_break'   , time: '9:15 AM'   , break_icon: 'bell', break_desc: 'Opening Address for Day 1'
+    = render 'slot_speaker' , time: '9:30 AM'   , speaker: Speaker.find(:matz)
+    = render 'slot_speaker' , time: '10:30 AM'  , speaker: @speakers.first
+    = render 'slot_break'   , time: '9:15 AM'   , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_speaker' , time: '11:15 AM'  , speaker: @speakers.first
+    = render 'slot_speaker' , time: '11:45 AM'  , speaker: @speakers.first
+    = render 'slot_break'   , time: '12:15 PM'  , break_icon: 'cutlery', break_desc: 'Lunch'
+    = render 'slot_speaker' , time: '1:45 PM'   , speaker: Speaker.find(:lrz)
+    = render 'slot_speaker' , time: '2:30 PM'   , speaker: @speakers.first
+    = render 'slot_break'   , time: '3:00 PM'   , break_icon: 'bolt', break_desc: 'Lightning Talks'
+    = render 'slot_break'   , time: '3:30 PM'   , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_break'   , time: '4:00 PM'   , break_icon: 'comments', break_desc: 'Ruby Panel'
+    = render 'slot_speaker' , time: '5:00 PM'   , speaker: @speakers.first
+
+  .col-sm-5
+    .subheading
+      ' Day 2, 5 June (Friday)
+    = render 'slot_break'   , time: '8:15AM'    , break_icon: 'check', break_desc: 'Registration + Breakfast'
+    = render 'slot_break'   , time: '9:15AM'    , break_icon: 'bell', break_desc: 'Opening Address for Day 2'
+    = render 'slot_speaker' , time: '9:30AM'    , speaker: Speaker.find(:samsaffron)
+    = render 'slot_speaker' , time: '10:30AM'   , speaker: @speakers.first
+    = render 'slot_break'   , time: '9:15AM'    , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_speaker' , time: '11:15AM'   , speaker: @speakers.first
+    = render 'slot_speaker' , time: '11:45AM'   , speaker: @speakers.first
+    = render 'slot_break'   , time: '12:15PM'   , break_icon: 'cutlery', break_desc: 'Lunch'
+    = render 'slot_speaker' , time: '1:45PM'    , speaker: Speaker.find(:lindaliukas)
+    = render 'slot_speaker' , time: '2:30PM'    , speaker: @speakers.first
+    = render 'slot_break'   , time: '3:00PM'    , break_icon: 'bolt', break_desc: 'Lightning Talks'
+    = render 'slot_break'   , time: '3:30PM'    , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_speaker' , time: '4:00PM'    , speaker: @speakers.first
+    = render 'slot_speaker' , time: '4:30PM'    , speaker: Speaker.find(:tenderlove)
+
+hr
+
 .row.section.speakers
   .col-sm-8.col-sm-offset-2
     .heading#speakers
