@@ -1,18 +1,21 @@
 .schedule {
   &--spot {
     margin-top: 5px;
+    font-size: 0.95em;
   }
 
   &--spot-time {
     border-top: 1px dotted #F48FB1;
     padding-top: 10px;
-    text-align: right;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #999999;
   }
 
   &--spot-topic {
     margin-bottom: 5px;
     padding-top: 10px;
-    font-style: italic;
 
     i {
       color: #C51162;
@@ -21,12 +24,11 @@
 
   &--spot-speaker {
     margin-bottom: 5px;
-    font-size: 0.9em;
   }
 
   &--spot-avatar img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-right: 5px;
     border-radius: 110px;
     border: 2px solid #FF80AB;
