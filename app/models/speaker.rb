@@ -159,6 +159,34 @@ class Speaker
             \nWe're talking important people here. A few prominent community members tried to convince Matz to remove Refinements from Ruby. The latest JRuby is compatible with Matz's Ruby 2... except that it lacks Refinements. This innocent feature might end up splitting the Ruby ecosystem.
             \nAre Refinements the best idea since blocks and modules, or a terrible mistake? Decide for yourself. In twenty minutes, I'll tell you the good, the bad and the ugly about refinements. At the end of this speech, you'll understand the trade-offs of this controversial feature – and know what all the fuss is about."
       },
+      hsbt:
+      {
+        :id       => :hsbt,
+        :name     => "Hiroshi Shibata",
+        :avatar   => "speakers/hsbt.jpeg",
+        :tagline  => "Chief Engineer, GMO Pepabo, Inc.",
+        :twitter  => "https://twitter.com/hsbt",
+        :github   => "https://github.com/hsbt",
+        :bio      => "CRuby committer and root operation engineer of ruby-lang.org. I am a full-stack developer at GMO Pepabo.",
+        :topic    => "HTTP Programming with mruby",
+        :desc     =>
+          "mruby is the lightweight implementation of the Ruby language and was released about a year ago. Can we use mruby to write web services?
+            \nThis answer is YES - our company used mruby in large scaled web services. Even with mruby, we were able to create web services with tests and gems, and it also helped to solve some problems using Ruby code outside of a Rails application. In essence, mruby also provides programming features like HTTP to us web programmers."
+      },
+      stania1:
+      {
+        :id       => :stania1,
+        :name     => "Sofia Tania",
+        :avatar   => "speakers/stania1.png",
+        :tagline  => "Developer, ThoughtWorks",
+        :twitter  => "https://twitter.com/stania_ang",
+        :github   => "https://github.com/stania1",
+        :bio      => "Journeywoman Developer, Co-organizer of RailsGirls Singapore.",
+        :topic    => "Collaborating with Contracts",
+        :desc     =>
+          "In the real world, when two parties collaborate, there often needs to be a shared understanding - a 'contract'. So is the case when two components of a system collaborate.
+            \nIn this talk, I will share about contract tests, when they become useful, and some tools to help."
+      },
       tgxworld:
       {
         :id       => :tgxworld,
@@ -176,33 +204,20 @@ class Speaker
             \nHaving gone through the process, I hope to help answer those questions and give confidence to new developers that have yet to contribute to open source projects because of such fears. There are tools and techniques which I have learnt and picked up that can help new developers understand a foreign code base better which I would like to demonstrate as well.
             \nIn addition, I will like to talk about RubyBench.org, a long running benchmark Ruby benchmark that I helped to revitalized and launched. I will talk about why RubyBench.org matters to the community and how it is being structured. Following which, I will talk about my experience starting RubyBench.org and how rewarding it can be."
       },
-      stania1:
+      yuki24:
       {
-        :id       => :stania1,
-        :name     => "Sofia Tania",
-        :avatar   => "speakers/stania1.png",
-        :tagline  => "Developer, ThoughtWorks",
-        :twitter  => "https://twitter.com/stania_ang",
-        :github   => "https://github.com/stania1",
-        :bio      => "Journeywoman Developer, Co-organizer of RailsGirls Singapore.",
-        :topic    => "Collaborating with Contracts",
+        :id       => :yuki24,
+        :name     => "Yuki Nishijima",
+        :avatar   => "speakers/yuki24.jpeg",
+        :tagline  => "Software Engineer and Open Source Contributor, Pivotal Labs NYC",
+        :twitter  => "https://twitter.com/yuki24",
+        :github   => "https://github.com/yuki24",
+        :bio      => "Yuki is a Rubyist who was raised in Tokyo and works for Pivotal Labs in New York now. He is a maintainer of kaminari, the creator of did_you_mean, and a frequent contributor to many open source projects including Rails.",
+        :topic    => "'Did you mean?' experience in Ruby and beyond",
         :desc     =>
-          "In the real world, when two parties collaborate, there often needs to be a shared understanding - a 'contract'. So is the case when two components of a system collaborate.
-            \nIn this talk, I will share about contract tests, when they become useful, and some tools to help."
-      },
-      hsbt:
-      {
-        :id       => :hsbt,
-        :name     => "Hiroshi Shibata",
-        :avatar   => "speakers/hsbt.jpeg",
-        :tagline  => "Chief Engineer, GMO Pepabo, Inc.",
-        :twitter  => "https://twitter.com/hsbt",
-        :github   => "https://github.com/hsbt",
-        :bio      => "CRuby committer and root operation engineer of ruby-lang.org. I am a full-stack developer at GMO Pepabo.",
-        :topic    => "HTTP Programming with mruby",
-        :desc     =>
-          "mruby is the lightweight implementation of the Ruby language and was released about a year ago. Can we use mruby to write web services?
-            \nThis answer is YES - our company used mruby in large scaled web services. Even with mruby, we were able to create web services with tests and gems, and it also helped to solve some problems using Ruby code outside of a Rails application. In essence, mruby also provides programming features like HTTP to us web programmers."
+          "did_you_mean gem is a gem that adds a Google-like suggestion feature to Ruby. Whenever you mis-spell a method name, it'll read your mind and tell you the right one.
+            \nAlthough the history of the gem isn't long, it got so many improvements since it's first released back in February 2014. In this talk, I'll talk about what improvements have been made after a quick introduction of how it works.
+            \nHave a custom Exception class and want to make it 'correctable'? Let's learn how to create your own finder so you can improve your coding experience in Ruby."
       },
     }
   end
