@@ -90,7 +90,7 @@ class Speaker
         :tagline  => "Director at PayPal,<br>Regional Solutions Engineering",
         :twitter  => "https://twitter.com/sausheong",
         :github   => "https://github.com/sausheong",
-        :bio      => "Sau Sheong has been doing software development for 20 years, mostly in web application development. He is active in the Ruby and Go developer communities have have contributed to open source projects and spoke at meetups and conferences. Sau Sheong has also published 3 programming-related books, mostly on Ruby and is working on a 4th book titled 'Go Web Programming'. He is currently an engineering director in PayPal, and has in his career worked for HP, Yahoo, and also ran a technology startup during the dot-com days.",
+        :bio      => "Sau Sheong has been doing software development for 20 years, mostly in web application development. He is active in the Ruby and Go developer communities and have contributed to open source projects and spoke at meetups and conferences. Sau Sheong has also published 3 programming-related books, mostly on Ruby and is working on a 4th book titled 'Go Web Programming'. He is currently an engineering director in PayPal, and has in his career worked for HP, Yahoo, and also ran a technology startup during the dot-com days.",
         :topic    => "Rollicking Ruby Robots Rule the World",
         :desc     =>
           "We don't see it all the time but robots that make our lives easier are already here with us. While they look nothing like the Transformers (cool!) or the Terminator (cool but scary), they affect our lives just as deeply. They assemble our cars, package our goods, manufacture our electronics, harvest our crops, clean our floors, drive our cars and even fight our wars (scary again).
@@ -195,7 +195,7 @@ class Speaker
         :tagline  => "Student, RubyBench.org",
         :twitter  => "https://twitter.com/tgx_world",
         :github   => "https://github.com/tgxworld",
-        :bio      => "Guo Xiang first started learning Ruby and Rails one and a half years after deciding that mechanical engineering was not for him. While completing his last two semesters in his undergraduate degree, he contributes regularly to Ruby on Rails and participated in Google Summer of Code 2014 under Ruby on Rails. With the help of Sam Saffron, he revitalized and launched RubyBench.org.",
+        :bio      => "Guo Xiang first started learning Ruby and Rails one and a half years ago after deciding that mechanical engineering was not for him. While completing his last two semesters in his undergraduate degree, he contributes regularly to Ruby on Rails and participated in Google Summer of Code 2014 under Ruby on Rails. With the help of Sam Saffron, he revitalized and launched RubyBench.org.",
         :topic    => "Starting & Contributing to Open Source Projects for Beginners",
         :desc     =>
           "Contributing to Open Source projects can be daunting for beginner but at the same time extremely rewarding. Before I started contributing, I was asking myself these questions:
