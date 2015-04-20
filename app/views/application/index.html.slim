@@ -27,7 +27,7 @@
     = render 'slot_break'       , time: '9:15AM'    , break_icon: 'bell', break_desc: 'Opening Address for Day 2'
     = render 'slot_speaker'     , time: '9:30AM'    , speaker: Speaker.find(:samsaffron)
     = render 'slot_speaker'     , time: '10:30AM'   , speaker: Speaker.find(:nusco)
-    = render 'slot_break'       , time: '11:00AM'    , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_break'       , time: '11:00AM'   , break_icon: 'coffee', break_desc: 'Break'
     = render 'slot_speaker'     , time: '11:15AM'   , speaker: Speaker.find(:hsbt)
     = render 'slot_speaker'     , time: '11:45AM'   , speaker: Speaker.find(:stania1)
     = render 'slot_break'       , time: '12:15PM'   , break_icon: 'cutlery', break_desc: 'Lunch'
@@ -217,6 +217,3 @@ hr
           .subheading.text-left
             ' Speaker's Bio
           .speaker--topic-text= simple_format speaker.bio
-
-
-
