@@ -195,7 +195,7 @@ class Speaker
         :tagline  => "Student, RubyBench.org",
         :twitter  => "https://twitter.com/tgx_world",
         :github   => "https://github.com/tgxworld",
-        :bio      => "Guo Xiang first started learning Ruby and Rails one and a half years after deciding that mechanical engineering was not for him. While completing his last two semesters in his undergraduate degree, he contributes regularly to [Rails](http://contributors.rubyonrails.org/contributors/guo-xiang-tan/commits) and participated in Google Summer of Code 2014 under Ruby on Rails. With the help of Sam Saffron, he revitalized and launched [RubyBench.org](RubyBench.org).",
+        :bio      => "Guo Xiang first started learning Ruby and Rails one and a half years after deciding that mechanical engineering was not for him. While completing his last two semesters in his undergraduate degree, he contributes regularly to Ruby on Rails and participated in Google Summer of Code 2014 under Ruby on Rails. With the help of Sam Saffron, he revitalized and launched RubyBench.org.",
         :topic    => "Starting & Contributing to Open Source Projects for Beginners",
         :desc     =>
           "Contributing to Open Source projects can be daunting for beginner but at the same time extremely rewarding. Before I started contributing, I was asking myself these questions:
