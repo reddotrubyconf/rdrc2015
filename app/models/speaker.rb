@@ -72,7 +72,7 @@ class Speaker
       indirect:
       {
         :id       => :indirect,
-        :name     => "André	Arko",
+        :name     => "André Arko",
         :avatar   => "speakers/indirect.jpg",
         :tagline  => "Vice Minister of Computation, Cloud City",
         :twitter  => "https://twitter.com/indirect",
@@ -115,7 +115,7 @@ class Speaker
       _cha1tanya:
       {
         :id       => :_cha1tanya,
-        :name     => "Prathamesh	Sonpatki",
+        :name     => "Prathamesh Sonpatki",
         :avatar   => "speakers/_cha1tanya.jpg",
         :tagline  => "Programmer, BigBinary",
         :twitter  => "https://twitter.com/_cha1tanya",
@@ -131,7 +131,7 @@ class Speaker
       morred:
       {
         :id       => :morred,
-        :name     => "Laura	Eck",
+        :name     => "Laura Eck",
         :avatar   => "speakers/morred.jpg",
         :tagline  => "Web Developer, testcloud",
         :twitter  => "https://twitter.com/laura_nobilis",
@@ -146,7 +146,7 @@ class Speaker
       nusco:
       {
         :id       => :nusco,
-        :name     => "Paolo	Perrotta",
+        :name     => "Paolo Perrotta",
         :avatar   => "speakers/ruby.png",
         :tagline  => "Software Loudmouth",
         :twitter  => "https://twitter.com/nusco",
