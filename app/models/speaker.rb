@@ -202,7 +202,7 @@ class Speaker
             \n* Rails is such a huge and complex code base, how can I contribute anything?
             \n* I might be wrong, so I better not raise the issue or apply a ""lousy"" patch.
             \nHaving gone through the process, I hope to help answer those questions and give confidence to new developers that have yet to contribute to open source projects because of such fears. There are tools and techniques which I have learnt and picked up that can help new developers understand a foreign code base better which I would like to demonstrate as well.
-            \nIn addition, I will like to talk about RubyBench.org, a long running benchmark Ruby benchmark that I helped to revitalized and launched. I will talk about why RubyBench.org matters to the community and how it is being structured. Following which, I will talk about my experience starting RubyBench.org and how rewarding it can be."
+            \nIn addition, I will like to talk about RubyBench.org, a long running Ruby benchmark that I helped to revitalized and launched. I will talk about why RubyBench.org matters to the community and how it is being structured. Following which, I will talk about my experience starting RubyBench.org and how rewarding it can be."
       },
       yuki24:
       {
