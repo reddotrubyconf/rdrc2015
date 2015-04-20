@@ -1,37 +1,68 @@
-.row.section.speakers
-  .col-sm-8.col-sm-offset-2
-    .heading#speakers
-      ' Speakers
-    - @speakers.each do |speaker|
-      .speaker
-        .outer-ring
-          .inner-ring
-            .speaker--avatar
-              = image_tag speaker.avatar
-        .speaker--name
-          = speaker.name
-        .speaker--tagline
-          = speaker.tagline
-        .speaker--links
-          - if speaker.twitter.present?
-            => link_to icon('twitter'), speaker.twitter
-          - if speaker.github.present?
-            => link_to icon('github'), speaker.github
-
-.row
+.row.section.schedule
   .col-sm-12
-    .text-center style='margin-top: 20px;'
-      ' And more to come!
+    .heading#schedule
+      ' Schedule
+  .col-sm-5.col-sm-offset-1
+    .subheading.text-left
+      ' Day 1, 4 June (Thursday)
+    = render 'slot_break'       , time: '8:15 AM'   , break_icon: 'check', break_desc: 'Registration + Breakfast'
+    = render 'slot_break'       , time: '9:15 AM'   , break_icon: 'bell', break_desc: 'Opening Address for Day 1'
+    = render 'slot_speaker'     , time: '9:30 AM'   , speaker: Speaker.find(:matz)
+    = render 'slot_speaker'     , time: '10:30 AM'  , speaker: Speaker.find(:indirect)
+    = render 'slot_break'       , time: '11:00 AM'  , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_2_speakers'  , time: '11:15 AM'  , speaker_1: Speaker.find(:sausheong), speaker_2: Speaker.find(:billhsu)
+    = render 'slot_speaker'     , time: '11:45 AM'  , speaker: Speaker.find(:_cha1tanya)
+    = render 'slot_break'       , time: '12:15 PM'  , break_icon: 'cutlery', break_desc: 'Lunch'
+    = render 'slot_speaker'     , time: '1:45 PM'   , speaker: Speaker.find(:lrz)
+    = render 'slot_speaker'     , time: '2:30 PM'   , speaker: Speaker.find(:morred)
+    = render 'slot_break'       , time: '3:00 PM'   , break_icon: 'bolt', break_desc: 'Lightning Talks'
+    = render 'slot_break'       , time: '3:30 PM'   , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_break'       , time: '4:00 PM'   , break_icon: 'comments', break_desc: 'Ruby Panel'
+    = render 'slot_speaker'     , time: '5:00 PM'   , speaker: Speaker.find(:jesseplusplus)
+
+  .col-sm-5
+    .subheading
+      ' Day 2, 5 June (Friday)
+    = render 'slot_break'       , time: '8:15AM'    , break_icon: 'check', break_desc: 'Registration + Breakfast'
+    = render 'slot_break'       , time: '9:15AM'    , break_icon: 'bell', break_desc: 'Opening Address for Day 2'
+    = render 'slot_speaker'     , time: '9:30AM'    , speaker: Speaker.find(:samsaffron)
+    = render 'slot_speaker'     , time: '10:30AM'   , speaker: Speaker.find(:nusco)
+    = render 'slot_break'       , time: '11:00AM'    , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_speaker'     , time: '11:15AM'   , speaker: Speaker.find(:hsbt)
+    = render 'slot_speaker'     , time: '11:45AM'   , speaker: Speaker.find(:stania1)
+    = render 'slot_break'       , time: '12:15PM'   , break_icon: 'cutlery', break_desc: 'Lunch'
+    = render 'slot_speaker'     , time: '1:45PM'    , speaker: Speaker.find(:lindaliukas)
+    = render 'slot_speaker'     , time: '2:30PM'    , speaker: Speaker.find(:tgxworld)
+    = render 'slot_break'       , time: '3:00PM'    , break_icon: 'bolt', break_desc: 'Lightning Talks'
+    = render 'slot_break'       , time: '3:30PM'    , break_icon: 'coffee', break_desc: 'Break'
+    = render 'slot_speaker'     , time: '2:30PM'    , speaker: Speaker.find(:yuki24)
+    = render 'slot_speaker'     , time: '4:30PM'    , speaker: Speaker.find(:tenderlove)
+    = render 'slot_break'       , time: '7:00PM'    , break_icon: 'beer', break_desc: 'After Party!'
 
 hr
 
-.row.section.call-for-proposals
+.row.section.venue
   .col-sm-6.col-sm-offset-3
-    .heading#speak-at-rdrc-2015
-      ' Speak at RDRC 2015
-    .text-center
-      p
-        ' Call for Proposals have ended on <b>Monday, 30 Mar 2015, 2359hrs (SGT)</b>. <br>We'll be contacting shortlisted speakers soon. Thank you!
+    .heading#venue
+      ' Venue
+    .row
+      .col-sm-6
+        .venue--name
+          ' Matrix (Biopolis), Singapore
+        .venue--address
+          ' 30 Biopolis Street, Singapore 138671
+
+        ul.venue--directions
+          li.venue--direction
+            span.cc CC22
+            span.ew> EW21
+            ' Buona Vista is the nearest station to the venue
+          li.venue--direction Take Exit D at Buona Vista and walk 500m to Matrix (Biopolis)
+          li.venue--direction Otherwise, use #{link_to 'Gothere.sg', 'http://gothere.sg/maps#q:matrix%20biopolis', target: '_blank'} to help plan your route
+
+      .col-sm-6
+        = link_to 'http://bit.ly/Wb5bfe', class: 'venue--map', target: '_blank'
+          = image_tag 'map.png'
 
 hr
 
@@ -40,9 +71,8 @@ hr
     .heading#sponsors
       ' Sponsors
     .text-center
-      p RDRC 2015 needs sponsors! Would you like to help grow the Ruby community and showcase your company at the same time?
+      p Our sponsors are awesome! THANK YOU!
 
-      p Please #{link_to 'get in touch with us at organisers@reddotrubyconf.com', 'mailto:organisers@reddotrubyconf.com'} or #{link_to 'download our Sponsor Kit', '/sponsorkit.pdf'} for more information. Thank you!
 
     .row.sponsors--elite
       .col-sm-12.text-center
@@ -103,31 +133,6 @@ hr
 
 hr
 
-.row.section.venue
-  .col-sm-6.col-sm-offset-3
-    .heading#venue
-      ' Venue
-    .row
-      .col-sm-6
-        .venue--name
-          ' Matrix (Biopolis), Singapore
-        .venue--address
-          ' 30 Biopolis Street, Singapore 138671
-
-        ul.venue--directions
-          li.venue--direction
-            span.cc CC22
-            span.ew> EW21
-            ' Buona Vista is the nearest station to the venue
-          li.venue--direction Take Exit D at Buona Vista and walk 500m to Matrix (Biopolis)
-          li.venue--direction Otherwise, use #{link_to 'Gothere.sg', 'http://gothere.sg/maps#q:matrix%20biopolis', target: '_blank'} to help plan your route
-
-      .col-sm-6
-        = link_to 'http://bit.ly/Wb5bfe', class: 'venue--map', target: '_blank'
-          = image_tag 'map.png'
-
-hr
-
 .row.section.code-of-conduct
   .col-sm-6.col-sm-offset-3
     .heading#code-of-conduct
@@ -159,3 +164,59 @@ hr
           ' Check out this
           => link_to 'handbook', 'https://github.com/rubysg/singapore'
           ' for things to know about Singapore.
+
+hr
+
+.row.section.speakers
+  .col-sm-12
+    .heading#speakers
+      ' Speakers
+
+    .row
+      - @speakers[0,6].each do |speaker|
+        .col-sm-4.speaker.no-border id=speaker.id
+          .avatar
+            .outer-ring
+              .inner-ring
+                .avatar--avatar
+                  = image_tag speaker.avatar
+            .avatar--name
+              = speaker.name
+            .avatar--tagline
+              = speaker.tagline.html_safe
+            .avatar--links
+              - if speaker.twitter.present?
+                => link_to icon('twitter'), speaker.twitter
+              - if speaker.github.present?
+                => link_to icon('github'), speaker.github
+
+    hr
+
+    - @speakers[6..-1].each do |speaker|
+      .row.speaker id=speaker.id
+        .col-sm-3
+          .avatar
+            .outer-ring
+              .inner-ring
+                .avatar--avatar
+                  = image_tag speaker.avatar
+            .avatar--name
+              = speaker.name
+            .avatar--tagline
+              = speaker.tagline.html_safe
+            .avatar--links
+              - if speaker.twitter.present?
+                => link_to icon('twitter'), speaker.twitter
+              - if speaker.github.present?
+                => link_to icon('github'), speaker.github
+        .col-sm-4.speaker--topic
+          .subheading.text-left
+            = speaker.topic
+          .speaker--topic-text= simple_format speaker.desc
+        .col-sm-4.speaker--bio
+          .subheading.text-left
+            ' Speaker's Bio
+          .speaker--topic-text= simple_format speaker.bio
+
+
+

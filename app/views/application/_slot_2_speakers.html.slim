@@ -1,0 +1,13 @@
+.row.schedule--spot
+  .col-sm-3.schedule--spot-time
+    = time
+
+  .col-sm-9.schedule--spot-details
+    .schedule--spot-topic
+      strong= link_to speaker_1.topic, "##{speaker_1.id}"
+    .schedule--spot-speaker
+      span.schedule--spot-avatar= image_tag speaker_1.avatar
+      span.schedule--spot-name  = speaker_1.name
+      span style='margin-right: 10px;'
+      span.schedule--spot-avatar= image_tag speaker_2.avatar
+      span.schedule--spot-name  = speaker_2.name
