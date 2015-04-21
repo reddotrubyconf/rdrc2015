@@ -87,7 +87,7 @@ class Speaker
         :id       => :sausheong,
         :name     => "Sau Sheong Chang",
         :avatar   => "speakers/sausheong.png",
-        :tagline  => "Director at PayPal,<br>Regional Solutions Engineering",
+        :tagline  => "Director, Global Consumer Engineering, PayPal",
         :twitter  => "https://twitter.com/sausheong",
         :github   => "https://github.com/sausheong",
         :bio      => "Sau Sheong has been doing software development for 20 years, mostly in web application development. He is active in the Ruby and Go developer communities and have contributed to open source projects and spoke at meetups and conferences. Sau Sheong has also published 3 programming-related books, mostly on Ruby and is working on a 4th book titled 'Go Web Programming'. He is currently an engineering director in PayPal, and has in his career worked for HP, Yahoo, and also ran a technology startup during the dot-com days.",
