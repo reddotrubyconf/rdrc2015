@@ -147,7 +147,7 @@ class Speaker
       {
         :id       => :nusco,
         :name     => "Paolo Perrotta",
-        :avatar   => "speakers/ruby.png",
+        :avatar   => "speakers/nusco.jpg",
         :tagline  => "Software Loudmouth",
         :twitter  => "https://twitter.com/nusco",
         :github   => "https://github.com/nusco",
