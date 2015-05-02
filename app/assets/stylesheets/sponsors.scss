@@ -49,13 +49,7 @@
 
   &--supporting {
     .sponsors--box {
-      height: 150px;
-    }
-
-    @media(min-width: 767px) {
-      .sponsors--box:nth-child(n+2) {
-        margin-left: 3%;
-      }
+      height: 100px;
     }
   }
 }

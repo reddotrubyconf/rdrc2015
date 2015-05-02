@@ -93,15 +93,19 @@ hr
         .subheading
           ' Associate Sponsors
       .col-sm-10.col-sm-offset-1
-        .col-sm-4
+        .col-sm-3.col-xs-6
+          .sponsors--box
+            = link_to 'http://flowhero.io/', target: '_blank' do
+              = image_tag 'sponsors/flowhero-io.png'
+        .col-sm-3.col-xs-6
           .sponsors--box
             = link_to 'http://www.opsmanager.com', target: '_blank' do
               = image_tag 'sponsors/opsmanager.png'
-        .col-sm-4
+        .col-sm-3.col-xs-6
           .sponsors--box
             = link_to 'https://www.tinkerbox.com.sg', target: '_blank' do
               = image_tag 'sponsors/tinkerbox.png'
-        .col-sm-4
+        .col-sm-3.col-xs-6
           .sponsors--box
             = link_to 'https://github.com', target: '_blank' do
               = image_tag 'sponsors/github.png'
@@ -128,16 +132,19 @@ hr
       .col-sm-12.text-center
         .subheading
           ' Supporting Sponsors
-      .col-sm-10.col-sm-offset-3
-        .col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0.sponsors--box
-          = link_to 'https://www.digitalocean.com', target: '_blank' do
-            = image_tag 'sponsors/digitalocean.png'
-        .col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0.sponsors--box
-          = link_to 'https://www.stickermule.com', target: '_blank' do
-            = image_tag 'sponsors/stickermule.png'
-        .col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-0.sponsors--box
-          = link_to 'https://pragprog.com', target: '_blank' do
-            = image_tag 'sponsors/pragprog.png'
+      .col-sm-6.col-sm-offset-3
+        .col-sm-4.col-xs-4
+          .sponsors--box
+            = link_to 'https://www.digitalocean.com', target: '_blank' do
+              = image_tag 'sponsors/digitalocean.png'
+        .col-sm-4.col-xs-4
+          .sponsors--box
+            = link_to 'https://www.stickermule.com', target: '_blank' do
+              = image_tag 'sponsors/stickermule.png'
+        .col-sm-4.col-xs-4
+          .sponsors--box
+            = link_to 'https://pragprog.com', target: '_blank' do
+              = image_tag 'sponsors/pragprog.png'
 
 hr
 
