@@ -15,7 +15,10 @@
     = render 'slot_break'       , time: '12:15 PM'  , break_icon: 'cutlery', break_desc: 'Lunch'
     = render 'slot_speaker'     , time: '1:45 PM'   , speaker: Speaker.find(:lrz)
     = render 'slot_speaker'     , time: '2:30 PM'   , speaker: Speaker.find(:morred)
-    = render 'slot_break'       , time: '3:00 PM'   , break_icon: 'bolt', break_desc: 'Lightning Talks'
+
+    = render 'slot_lightning'   , time: '3:00 PM'   , break_icon: 'bolt', break_desc: 'Lightning Talks',
+      speakers: Speaker.find_by_identifiers(:juanitofatas, :hiroaki, :crigor, :kristine, :vaidehi)
+
     = render 'slot_break'       , time: '3:30 PM'   , break_icon: 'coffee', break_desc: 'Break'
     = render 'slot_break'       , time: '4:00 PM'   , break_icon: 'comments', break_desc: 'Ruby Panel'
     = render 'slot_speaker'     , time: '5:00 PM'   , speaker: Speaker.find(:jesseplusplus)
@@ -33,7 +36,10 @@
     = render 'slot_break'       , time: '12:15PM'   , break_icon: 'cutlery', break_desc: 'Lunch'
     = render 'slot_speaker'     , time: '1:45PM'    , speaker: Speaker.find(:lindaliukas)
     = render 'slot_speaker'     , time: '2:30PM'    , speaker: Speaker.find(:tgxworld)
-    = render 'slot_break'       , time: '3:00PM'    , break_icon: 'bolt', break_desc: 'Lightning Talks'
+
+    = render 'slot_lightning'   , time: '3:00 PM'   , break_icon: 'bolt', break_desc: 'Lightning Talks',
+      speakers: Speaker.find_by_identifiers(:radamanthus, :elisha, :grzegorz, :tomoya)
+
     = render 'slot_break'       , time: '3:30PM'    , break_icon: 'coffee', break_desc: 'Break'
     = render 'slot_speaker'     , time: '4:00PM'    , speaker: Speaker.find(:yuki24)
     = render 'slot_speaker'     , time: '4:30PM'    , speaker: Speaker.find(:tenderlove)
