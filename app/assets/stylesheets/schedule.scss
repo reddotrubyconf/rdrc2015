@@ -33,4 +33,13 @@
     border-radius: 110px;
     border: 2px solid #FF80AB;
   }
+
+  &--spot-lightning {
+    border-left: 3px solid #FF80AB;
+    margin-top: 10px;
+
+    &-container {
+      margin-left: 10px;
+    }
+  }
 }

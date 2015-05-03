@@ -7,6 +7,10 @@ class Speaker
     OpenStruct.new speakers.fetch(identifier)
   end
 
+  def self.find_by_identifiers(*identifiers)
+    identifiers.map { |identifier| self.find(identifier) }
+  end
+
   def self.speakers
     {
       matz:
@@ -218,6 +222,133 @@ class Speaker
           "did_you_mean gem is a gem that adds a Google-like suggestion feature to Ruby. Whenever you mis-spell a method name, it'll read your mind and tell you the right one.
             \nAlthough the history of the gem isn't long, it got so many improvements since it's first released back in February 2014. In this talk, I'll talk about what improvements have been made after a quick introduction of how it works.
             \nHave a custom Exception class and want to make it 'correctable'? Let's learn how to create your own finder so you can improve your coding experience in Ruby."
+      },
+      hiroaki:
+      {
+        :id       => :hiroaki,
+        :name     => "Hiroaki Iwase",
+        :avatar   => "lightning_speakers/hiroaki.jpg",
+        :tagline  => "ROMA Developer, Web Engineer, Rakuten Inc.",
+        :twitter  => "https://twitter.com/h1r0ak1_1wa5e",
+        :github   => "https://github.com/hiroaki-iwase",
+        :bio      => "Hiroaki Iwase is a Ruby & Rails programmer. He joined Rakuten in 2011. He developed several internal DB systems for Rakuten and also advertisement system in mediaForge, Inc. which is the American advertising company. Now he develops and promotes ROMA which is a NOSQL database system made for Ruby.",
+        :topic    => "Ruby based Distributed Key Value Store 'ROMA'",
+        :desc     =>
+          "I am going to introduce ROMA(Ruby/Rakuten On-Memory Architecture). ROMA is one of the data storing systems for distributed key-value stores. It is a completely decentralized distributed system that consists of multiple processes, called nodes, on several machines. It is based on pure P2P architecture like a distributed hash table, thus it provides high availability and scalability. This has been developed as an OSS product written in Ruby from 2007.
+            \nI will also share a GUI management tool named 'Gladiator', which is developed for Ruby on Rails, enabling developers to control ROMA more easily and intuitively."
+      },
+      juanitofatas:
+      {
+        :id       => :JuanitoFatas,
+        :name     => "Juanito Fatas",
+        :avatar   => "lightning_speakers/juanito.jpg",
+        :tagline  => "Jolly Good Coder, Jolly Good Code.",
+        :twitter  => "https://twitter.com/juanitofatas",
+        :github   => "https://github.com/JuanitoFatas",
+        :bio      => "Juanito Fatas is passionate about programming, web development, and an amateur translator. He contributes to open source projects frequently.",
+        :topic    => "How Emoji Changed My Life",
+        :desc     =>
+          "What is Emoji? Why Emoji is important? How many kinds of emojis are there? Why should I use Emoji? How to use Emoji? How to use Emoji in Ruby? What can I do with Emoji? How Emoji affects meaning? How Emoji affects technology? How Emoji affects the society? How Emoji affects my life? Why I give a talk on Emoji? I will answer these questions and introduce you to the brand new emoji world."
+      },
+      crigor:
+      {
+        :id       => :crigor,
+        :name     => "Christopher Rigor",
+        :avatar   => "lightning_speakers/christopher.jpg",
+        :tagline  => "Application Support Team Lead, Engine Yard.",
+        :twitter  => "https://twitter.com/crigor",
+        :github   => "https://github.com/crigor",
+        :bio      => "Christopher Rigor has degrees in Computer Science and Mathematics. He is a web developer and a system administrator. He is based in Manila, Philippines and is currently the Support Team Lead for Asia Pacific at Engine Yard.",
+        :topic    => "How Docker Can Change Rails Deployments",
+        :desc     =>
+          "A typical Rails deployment involves using a tool like Capistrano to pull the code from your Git repository, symlink configuration files and restart the app server.
+            \nDocker offers improvements to this workflow but it's not all roses. Hear about the triumphs and challenges when moving from Capistrano deployments to Docker."
+      },
+      kristine:
+      {
+        :id       => :kristine,
+        :name     => "Kristine Joy Paas",
+        :avatar   => "lightning_speakers/kristine.jpg",
+        :tagline  => "Web Developer, Quipper.",
+        :twitter  => "https://twitter.com/kjcpaas",
+        :github   => "https://github.com/kjcpaas",
+        :bio      => "I am a licensed Mathematics teacher in the Philippines. Although I don't teach in the classroom, being part of our Quipper helps me contribute to the development of education in many countries. When I am not coding, I like watching series and swim.",
+        :topic    => "Values from Puzzles, Math, and Code",
+        :desc     =>
+          "This talk is about how my experiences from childhood doing puzzles and Maths help me as a professional developer. As a child, I loved puzzles. I used to hate Math and coding before but looking back at my childhood, I remembered how fun it is to solve problems and always remind myself about it."
+      },
+      vaidehi:
+      {
+        :id       => :vaidehi,
+        :name     => "Vaidehi Joshi",
+        :avatar   => "lightning_speakers/vaidehi.jpg",
+        :tagline  => "Ruby on Rails Developer, Friends of The Web.",
+        :twitter  => "https://twitter.com/vaidehijoshi",
+        :github   => "https://github.com/vaidehijoshi",
+        :bio      => "Formerly a teacher, sometimes a writer, and currently a web developer at Friends of the Web in Baltimore, Maryland. Human who likes to create things for other humans. Graduate of The Flatiron School and Barnard College. But most importantly, a hardcore cheesecake enthusiast.",
+        :topic    => "Refactoring of Self",
+        :desc     =>
+          "As new programmers, we don't always write beautiful code. In fact, most of our early code is quite bad. So we try to refactor it.
+            \nBut refactoring also plays a significant role in our personal lives. As programmers, we 'refactor' ourselves on a daily basis. We implement different technologies, learn new skills, and confront our own mistakes every day -- all in an effort to become better at what we do. And in the process, we become better iterations of ourselves.
+            \nThis talk will explore how programming challenges us to not only refactor our own code, but also our very own sense of self."
+      },
+      radamanthus:
+      {
+        :id       => :radamanthus,
+        :name     => "Radamanthus Batnag",
+        :avatar   => "lightning_speakers/radamanthus.jpg",
+        :tagline  => "Application Support Engineer, Engine Yard.",
+        :twitter  => "https://twitter.com/radamanthus",
+        :github   => "https://github.com/radamanthus",
+        :bio      => "I started web programming 15 years ago with the OpenACS web framework. In 2006 one of the core maintainers of OpenACS announced he’s moving to Rails. I followed him into Rails, and I haven’t looked back ever since. These days I do mostly devops work as part of the Application Support team at Engine Yard.",
+        :topic    => "Doodling for Great Success",
+        :desc     =>
+          "As coders, we are very familiar with how to communicate using written words. But words exercise only half of our brain. Using sketches to enhance our message leads to more effective communication. It is fun, too!
+            \nI will discuss sketching tips that everyone - even those who think they have no drawing skills - can use right away. These can be applied to blog posts, open-source documentation, bug reports, and even emails."
+      },
+      elisha:
+      {
+        :id       => :elisha,
+        :name     => "Elisha Tan",
+        :avatar   => "lightning_speakers/elisha.png",
+        :tagline  => "Ecosystem Builder, Tech in Asia.",
+        :twitter  => "https://twitter.com/elishatan",
+        :github   => "https://github.com/learnemy",
+        :bio      => "Elisha Tan helps building tech startup ecosystems in Asia. In her past life, she was the founder of Learnemy where she picked up Ruby on Rails to code for her own startup. She now organises the monthly Rails Girls Singapore.",
+        :topic    => "Non-tech Contributions to The Tech Community",
+        :desc     =>
+          "\"I'm not skilled enough a programmer to contribute\" is a common response I get when I ask programmers why don't they contribute to the open source community. In this lightning talk, I share some ways that you can contribute to the community (hint: it's all non-technical and anyone can do it) even if you're half a decent coder like me."
+      },
+      grzegorz:
+      {
+        :id       => :grzegorz,
+        :name     => "Grzegorz Witek",
+        :avatar   => "lightning_speakers/grzegorz.jpg",
+        :tagline  => "Senior Software Develoepr, Kaligo.",
+        :twitter  => "https://twitter.com/arnvald",
+        :github   => "https://github.com/arnvald",
+        :bio      => "I boost economy by making bugs here and there, so that others always have something to fix and they can keep their jobs. Constantly afraid of stack overflows, I always work as an empty-stack developer.",
+        :topic    => "My Web Application Goes to China!",
+        :desc     =>
+          "When your web application launches in Japan, you translate the product, you launch another server, and there you go! When your web application launches in France, you translate the product, you launch another server, and there you go. When your web application launches in China, you translate the product, you launch another server, and then… then you learn about plenty of other things that you need to do if you want to avoid failure!"
+      },
+      tomoya:
+      {
+        :id       => :tomoya,
+        :name     => "Tomoya Kawanishi",
+        :avatar   => "lightning_speakers/tomoya.jpg",
+        :tagline  => "Chairman, Ruby Kansai.",
+        :twitter  => "https://twitter.com/cuzic",
+        :github   => "https://github.com/cuzic",
+        :bio      => "2014 chairman of Ruby Kansai \n2010 founded Amagasaki.rb \n2004 founded Ruby Kansai as co-founder",
+        :topic    => "Kansai Regional Rubyist Meetups",
+        :desc     =>
+          "I would like to tell the story about Ruby Kansai and Kansai Regional Rubyist Meetups.
+            \nThe first part describes Ruby Kansai and myself. Ruby Kansai is one of the oldest Ruby Meetup in Japan, that is born in 2004. I am the founder of Ruby Kansai and now the chairman of Ruby Kansai.
+            \nI would like to share what I have learned through the experience of organizing Ruby Kansai and what motivates me to do so.
+            \nThe second part is about the story of regional Ruby meetups in Kansai. Recently many people have founded Ruby meetups in Kansai. Now over 10 Ruby meetups are active in Kansai. I also founded one regional, small Ruby meetup -- Amagasaki.rb.
+            \nI would like to share with everyone the differences between big meetup like Ruby Kansai where over 80 people attend and small meetup like amagasaki.rb where less than 10 people attend. Both styles of meetup have good and bad parts.
+            \nThe last part is the future of Ruby Kansai. As the oldest and biggest Kansai Ruby community, Ruby Kansai would like to be hub, which connects beginners and experts, local and remote Rubyists, Ruby and other languages, suits and geeks."
       },
     }
   end
