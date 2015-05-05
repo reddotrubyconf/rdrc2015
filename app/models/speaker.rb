@@ -285,7 +285,7 @@ class Speaker
         :tagline  => "Ruby on Rails Developer, Friends of The Web.",
         :twitter  => "https://twitter.com/vaidehijoshi",
         :github   => "https://github.com/vaidehijoshi",
-        :bio      => "Formerly a teacher, sometimes a writer, and currently a web developer at Friends of the Web in Baltimore, Maryland. Human who likes to create things for other humans. Graduate of The Flatiron School and Barnard College. But most importantly, a hardcore cheesecake enthusiast.",
+        :bio      => "Formerly a teacher, sometimes a writer, and currently a web developer at Friends of The Web in Baltimore, Maryland. Graduate of the Flatiron School and a big time cheesecake enthusiast.",
         :topic    => "Refactoring of Self",
         :desc     =>
           "As new programmers, we don't always write beautiful code. In fact, most of our early code is quite bad. So we try to refactor it.
