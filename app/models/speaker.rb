@@ -202,9 +202,9 @@ class Speaker
         :bio      => "Guo Xiang first started learning Ruby and Rails one and a half years ago after deciding that mechanical engineering was not for him. While completing his last two semesters in his undergraduate degree, he contributes regularly to Ruby on Rails and participated in Google Summer of Code 2014 under Ruby on Rails. With the help of Sam Saffron, he revitalized and launched RubyBench.org.",
         :topic    => "Starting & Contributing to Open Source Projects for Beginners",
         :desc     =>
-          "Contributing to Open Source projects can be daunting for beginner but at the same time extremely rewarding. Before I started contributing, I was asking myself these questions:
+          "Contributing to Open Source projects can be daunting for beginners but at the same time extremely rewarding. Before I started contributing, I was asking myself these questions:
             \n* Rails is such a huge and complex code base, how can I contribute anything?
-            \n* I might be wrong, so I better not raise the issue or apply a ""lousy"" patch.
+            \n* I might be wrong, so I better not raise the issue or apply a \"lousy\" patch.
             \nHaving gone through the process, I hope to help answer those questions and give confidence to new developers that have yet to contribute to open source projects because of such fears. There are tools and techniques which I have learnt and picked up that can help new developers understand a foreign code base better which I would like to demonstrate as well.
             \nIn addition, I will like to talk about RubyBench.org, a long running Ruby benchmark that I helped to revitalized and launched. I will talk about why RubyBench.org matters to the community and how it is being structured. Following which, I will talk about my experience starting RubyBench.org and how rewarding it can be."
       },
