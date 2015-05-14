@@ -141,7 +141,7 @@ class Speaker
         :twitter  => "https://twitter.com/laura_nobilis",
         :github   => "https://github.com/morred",
         :bio      => "Laura is a web developer living in Tokyo and working for Berlin. One of her favorite pastimes is learning something new, be it a technology, a language or anything else. When she’s not busy coding, you can usually find her reading things, making things, climbing on or jumping over things, or trying out another martial art.",
-        :topic    => "Working Remotely as a Junior",
+        :topic    => "Working Remotely as a Junior Developer",
         :desc     =>
           "Working remotely is one of the legendary opportunities that being a web developer brings along. The freedom to work from wherever you want is, despite certain tradeoffs, pretty awesome and something many developers enjoy.
             \nFor many less experienced developers, however, there’s a lot of open questions: Isn’t it much harder for a junior? Will I be able to learn from my co-workers when I’m remote? How the heck do I get my company to agree to this? And even if they agree, how do I make it work?
