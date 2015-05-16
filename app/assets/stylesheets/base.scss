@@ -71,3 +71,20 @@ footer {
   line-height: 1.2em;
   text-align: center;
 }
+
+// vars for margin
+$sizes  : ((nil, 0px), (xs, 5px), (sm, 10px), (md, 20px), (lg, 40px));
+$corners: (top, right, bottom, left);
+
+// margin
+// .mar-sm-top    { margin-top:    10px }
+// .mar-sm-right  { margin-right:  10px }
+// .mar-sm-bottom { margin-bottom: 10px }
+// .mar-sm-left   { margin-left:   10px }
+@each $size in $sizes {
+  @each $corner in $corners {
+    .mar-#{nth($size, 1)}-#{$corner} {
+      margin-#{$corner}: #{nth($size, 2)};
+    }
+  }
+}
