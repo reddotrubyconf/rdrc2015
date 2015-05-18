@@ -43,12 +43,22 @@
     = render 'slot_break'       , time: '3:30PM'    , break_icon: 'coffee', break_desc: 'Break'
     = render 'slot_speaker'     , time: '4:00PM'    , speaker: Speaker.find(:yuki24)
     = render 'slot_speaker'     , time: '4:30PM'    , speaker: Speaker.find(:tenderlove)
-    = render 'slot_break'       , time: '7:00PM'    , break_icon: 'beer', break_desc: 'After Party!'
+    .row.schedule--spot
+      .col-sm-3.schedule--spot-time
+        ' 7:30PM
+
+      .col-sm-9.schedule--spot-details
+        .schedule--spot-topic
+          = icon 'beer', 'After Party!'
+        .small.text-muted
+          ' Canapés and 2 hours of free-flow house pours,
+          br
+          ' co-sponsored by PayPal.
 
 hr
 
 .row.section.venue
-  .col-sm-6.col-sm-offset-3
+  .col-sm-6
     .heading#venue
       ' Venue
     .row
@@ -68,7 +78,29 @@ hr
 
       .col-sm-6
         = link_to 'http://bit.ly/Wb5bfe', class: 'venue--map', target: '_blank'
-          = image_tag 'map.png'
+          = image_tag 'venue-map.png'
+
+  .col-sm-6
+    .heading#after-party
+      ' After Party
+    .row
+      .col-sm-6
+        .after-party--name
+          ' #{link_to 'The Beast', 'http://thebeast.sg/', target: '_blank'}
+        .after-party--address
+          ' 317 Jalan Klapa, Singapore 199329
+
+        ul.after-party--directions
+          li.after-party--direction
+            span.dt DT14
+            span.ew> EW12
+            ' Bugis is the nearest station to the venue
+          li.venue--direction Take Exit A at Bugis and walk 700m to The Beast.
+          li.venue--direction Otherwise, use #{link_to 'Gothere.sg', 'http://gothere.sg/maps#q:199329', target: '_blank'} to help plan your route
+
+      .col-sm-6
+        = link_to 'http://bit.ly/Wb5bfe', class: 'after-party--map', target: '_blank'
+          = image_tag 'after-party-map.png'
 
 hr
 
