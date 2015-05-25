@@ -273,7 +273,7 @@ hr
 
     hr
 
-    - @speakers[6..-1].each do |speaker|
+    - @speakers[3..3].concat(@speakers[6..-1]).each do |speaker|
       .row.speaker id=speaker.id
         .col-sm-3
           .avatar
@@ -294,6 +294,7 @@ hr
           .subheading.text-left
             = speaker.topic
           .speaker--topic-text= simple_format speaker.desc
+
         .col-sm-4.speaker--bio
           .subheading.text-left
             ' Speaker's Bio
