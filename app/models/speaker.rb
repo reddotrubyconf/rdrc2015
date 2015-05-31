@@ -31,7 +31,10 @@ class Speaker
         :tagline  => "Ruby Core, Rails Core",
         :twitter  => "https://twitter.com/tenderlove",
         :github   => "https://github.com/tenderlove",
-        :topic    => "Keynote"
+        :bio      => "Aaron was born and raised on the mean streets of Salt Lake City. His only hope for survival was to join the local gang of undercover street ballet performers known as the Tender Tights. As a Tender Tights member, Aaron learned to perfect the technique of self-defense pirouettes so that nobody, not even the Parkour Posse could catch him. Between vicious street dance-offs, Aaron taught himself to program. He learned to combine the art of street ballet with the craft of software engineering. Using these unique skills, he was able to leave his life on the streets and become a professional software engineer. He is currently Pirouetting through Processes, and Couruing through code for Red Hat. Sometimes he thinks back fondly on his life in the Tender Tights, but then he remembers that it is better to have Tender Loved and Lost than to never have Tender Taught at all.",
+        :topic    => " Code is Required",
+        :desc     =>
+          "You can't talk about running code without talk about loading code.  Part of improving the performance of Rails applications is looking at parts that impact Rails from outside of your application.  In this talk, we'll look at the different ways Ruby loads code and how this impacts our applications.  This talk will be more than you ever wanted to know about how Ruby loads files, and how we can speed it up."
       },
       lrz:
       {
@@ -53,8 +56,9 @@ class Speaker
         :github   => "https://github.com/lindaliukas",
         :bio      => "Linda is the author and illustrator of Hello Ruby, a childrens picture book about the whimsical world of computers, as well as the founder of Rails Girls, a global movement to teach young women programming in over 220 cities. She loves Muji, Zelda Fitzgerald, software and sparkly things.",
         :topic    => "Principles of Play",
-        :desc     => "If code is the colouring pens and lego blocks of our times - the tools of creation - how do we teach the curiosity, joy and wonder to our kids? I spent last summer looking at programming and play: how to create experiences that go deeper than just learning logic.
-          \nSo, just like Alice, I swallowed the blue pill and fell down inside the machine. This talk summarises my three principles of play and a few experiments I’ve learned with little Ruby and the journey I’ve been on with her."
+        :desc     =>
+          "If code is the colouring pens and lego blocks of our times - the tools of creation - how do we teach the curiosity, joy and wonder to our kids? I spent last summer looking at programming and play: how to create experiences that go deeper than just learning logic.
+            \nSo, just like Alice, I swallowed the blue pill and fell down inside the machine. This talk summarises my three principles of play and a few experiments I’ve learned with little Ruby and the journey I’ve been on with her."
       },
       jesseplusplus:
       {
@@ -66,7 +70,8 @@ class Speaker
         :github   => "https://github.com/jesseplusplus",
         :topic    => "Tackling Large Ruby Refactorings with Confidence (and Science!)",
         :bio      => "Jesse is the Head of Web Technology at GitHub, where she focuses on performance, reliability, and scalability of the Rails application that powers github.com. When she's not solving problems, you can find her traveling, hiking, or hanging out with her cats.",
-        :desc    => "At GitHub, we recently replaced a large subsystem of our application – the permissions code – with a faster and more flexible version. In this talk, I’ll share our approach to this large-scale rewrite of a critical piece of our Rails application, and how we accomplished this feat while both preserving the performance of our app and proving the new technology over the course of the project."
+        :desc     =>
+          "At GitHub, we recently replaced a large subsystem of our application – the permissions code – with a faster and more flexible version. In this talk, I’ll share our approach to this large-scale rewrite of a critical piece of our Rails application, and how we accomplished this feat while both preserving the performance of our app and proving the new technology over the course of the project."
       },
       samsaffron:
       {
@@ -76,7 +81,8 @@ class Speaker
         :tagline  => "Co-founder of Discourse",
         :twitter  => "https://twitter.com/samsaffron",
         :github   => "https://github.com/samsaffron",
-        :topic    => "Keynote"
+        :topic    => "Off the Rails",
+        :desc     => "Discourse is a rich JavaScript application with hundreds of assets. To cater for it we occasionally need to go off the beaten track by amending and extending Rails. This talk will cover diagnostic techniques, performance optimizations and other general extensions and libraries that help make Discourse fast, fun to develop and feature rich."
       },
       indirect:
       {
@@ -103,8 +109,8 @@ class Speaker
         :topic    => "Rollicking Ruby Robots Rule the World",
         :desc     =>
           "We don't see it all the time but robots that make our lives easier are already here with us. While they look nothing like the Transformers (cool!) or the Terminator (cool but scary), they affect our lives just as deeply. They assemble our cars, package our goods, manufacture our electronics, harvest our crops, clean our floors, drive our cars and even fight our wars (scary again).
-          \nIn this talk, we want to show you how you can create and program your own autonomous robots using Ruby. We will show you how we built an inexpensive hexapod spider robot and how we wrote the software to control it, using Ruby.
-          \nThis talk is inspired by Jim Weirich, who showed us Friendly Flying Robots with Ruby in 2013.",
+            \nIn this talk, we want to show you how you can create and program your own autonomous robots using Ruby. We will show you how we built an inexpensive hexapod spider robot and how we wrote the software to control it, using Ruby.
+            \nThis talk is inspired by Jim Weirich, who showed us Friendly Flying Robots with Ruby in 2013.",
       },
       billhsu:
       {
