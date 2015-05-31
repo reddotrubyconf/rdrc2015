@@ -68,8 +68,8 @@ class Speaker
         :tagline  => "Engineer at GitHub",
         :twitter  => "https://twitter.com/jesseplusplus",
         :github   => "https://github.com/jesseplusplus",
-        :topic    => "Tackling Large Ruby Refactorings with Confidence (and Science!)",
         :bio      => "Jesse is the Head of Web Technology at GitHub, where she focuses on performance, reliability, and scalability of the Rails application that powers github.com. When she's not solving problems, you can find her traveling, hiking, or hanging out with her cats.",
+        :topic    => "Tackling Large Ruby Refactorings with Confidence (and Science!)",
         :desc     =>
           "At GitHub, we recently replaced a large subsystem of our application – the permissions code – with a faster and more flexible version. In this talk, I’ll share our approach to this large-scale rewrite of a critical piece of our Rails application, and how we accomplished this feat while both preserving the performance of our app and proving the new technology over the course of the project."
       },
@@ -81,6 +81,7 @@ class Speaker
         :tagline  => "Co-founder of Discourse",
         :twitter  => "https://twitter.com/samsaffron",
         :github   => "https://github.com/samsaffron",
+        :bio      => "Sam Saffron is a co-founder of Discourse. He lives in sunny Sydney. He is the author of the rack-mini-profiler, memory_profiler, message_bus and logster gems. He loves all things performance.",
         :topic    => "Off the Rails",
         :desc     => "Discourse is a rich JavaScript application with hundreds of assets. To cater for it we occasionally need to go off the beaten track by amending and extending Rails. This talk will cover diagnostic techniques, performance optimizations and other general extensions and libraries that help make Discourse fast, fun to develop and feature rich."
       },
