@@ -272,15 +272,18 @@ class Speaker
       kristine:
       {
         :id       => :kristine,
-        :name     => "Kristine Joy Paas",
+        :name     => "Joy Paas",
         :avatar   => "lightning_speakers/kristine.jpg",
         :tagline  => "Web Developer, Quipper.",
         :twitter  => "https://twitter.com/kjcpaas",
         :github   => "https://github.com/kjcpaas",
-        :bio      => "I am a licensed Mathematics teacher in the Philippines. Although I don't teach in the classroom, being part of our Quipper helps me contribute to the development of education in many countries. When I am not coding, I like watching series and swim.",
+        :bio      => "Joy originally took up electronics engineering in college. After having a change of heart, she decided to be a high school Mathematics teacher. However, after enjoying coding as a hobby, she had another change of heart and decided to be a programmer instead, where she finally found her true passion.
+                        \nEven though she's not practicing her profession as a licensed teacher, she still contributes to improving the education experience by joining Quipper. Quipper is an edtech company that aims to provide free and accessible education for all.
+                        \nWhen relaxing from all the coding and Math, she usually plays games, read novels and manga, watch series, and run or jog.",
         :topic    => "Values from Puzzles, Math, and Code",
         :desc     =>
-          "This talk is about how my experiences from childhood doing puzzles and Maths help me as a professional developer. As a child, I loved puzzles. I used to hate Math and coding before but looking back at my childhood, I remembered how fun it is to solve problems and always remind myself about it."
+          "Some people enjoy puzzles. Some see it as a great way to make heads ache. Some people find Math very challenging. Same hate it with passion.
+            \nThis talk will cover the 'hidden' important values that puzzles and Math teach. These lessons help people not only in coding, but also in dealing with other real-life situations."
       },
       vaidehi:
       {
