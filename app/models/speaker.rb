@@ -64,7 +64,7 @@ class Speaker
         :tagline  => "Engineer at GitHub",
         :twitter  => "https://twitter.com/jesseplusplus",
         :github   => "https://github.com/jesseplusplus",
-        :topic    => "Keynote",
+        :topic    => "Tackling Large Ruby Refactorings with Confidence (and Science!)",
         :bio      => "Jesse is the Head of Web Technology at GitHub, where she focuses on performance, reliability, and scalability of the Rails application that powers github.com. When she's not solving problems, you can find her traveling, hiking, or hanging out with her cats.",
         :desc    => "At GitHub, we recently replaced a large subsystem of our application – the permissions code – with a faster and more flexible version. In this talk, I’ll share our approach to this large-scale rewrite of a critical piece of our Rails application, and how we accomplished this feat while both preserving the performance of our app and proving the new technology over the course of the project."
       },
