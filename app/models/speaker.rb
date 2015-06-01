@@ -44,7 +44,9 @@ class Speaker
         :tagline  => "Creator of RubyMotion, HipByte",
         :twitter  => "https://twitter.com/lrz",
         :github   => "https://github.com/lrz",
-        :topic    => "Keynote"
+        :bio      => "Laurent is the founder of HipByte and the original developer of RubyMotion. He worked at Apple for 7 years as a senior software engineer, on both iLife and OS X. At Apple, he maintained the Ruby distribution of OS X and also created the MacRuby project. In a previous life, he worked on IDA Pro and was an active contributor to RubyCocoa and GNOME. Laurent lives in Liège, Belgium. He enjoys drinking beer, eating waffles, and spending time with his wife and son.",
+        :topic    => "RubyMotion: cross-platform mobile development the right way",
+        :desc     => "RubyMotion is a toolchain to write cross-platform mobile apps for iOS and Android using the Ruby language. In this session we will cover how RubyMotion works, check out some of the high-level gems that can be used to speed up development, and finally discover that RubyMotion can also build cross-platform mobile games!"
       },
       lindaliukas:
       {
